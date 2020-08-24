@@ -1,0 +1,53 @@
+{ 
+    "questions":[
+      {
+        "description": "¿Cuales de estos elementos debes usar para lavar tus manos y prevenir el COVID-19?",
+        "answers":[
+          {
+            "description": "Agua y Jabon",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/BC86A0L.jpg"
+          }, 
+          {
+            "description": "Ketchup",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/m02WyJE.jpg"
+          }, 
+          {
+            "description": "Perfume",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/9prQ7pH.jpg"
+          },
+          {
+            "description": "Crema Dental",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/GY5FgHu.jpg"
+          }  
+        ]
+      },
+      {
+        "description": "¿Cuantos segundos debes lavar tua manos para prevenir el COVID-19??",
+        "answers":[
+          {
+            "description": "50 Segundos",
+            "isCorrect": false,
+            "img" : ""
+          }, 
+          {
+            "description": "20 Segundos",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/wzbBOmI.jpg"
+          },
+           {
+            "description": "1 Minuto",
+            "isCorrect": false
+          },
+          {
+            "description": "40 Segundosa",
+            "isCorrect": false,
+            "img" : ""
+          }        
+        ]
+      }
+    ]
+  }
