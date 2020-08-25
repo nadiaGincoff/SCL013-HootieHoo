@@ -1,5 +1,5 @@
 import React from 'react';
-import "./GameChild.css";
+import style from './GameChild.module.css'
 
 export const Trivia = (props) => {
   const handleOnClickAnswer = (isCorrect) =>{
@@ -16,15 +16,15 @@ export const Trivia = (props) => {
     <div>
       {questions.map((question,qindex)=>{
         return (
-          <div key={`question-${qindex}`}  className='question'>
+          <div key={`question-${qindex}`}  className={style.question}>
             <p>{question.description}</p>
-            <div className='answers'>
+            <div className={style.answer}>
               {question.answers.map((answer, aindex)=>{
                 return (
                     <button
                     onClick={()=> handleOnClickAnswer(answer.isCorrect)}
                     key={`answer-${aindex}`}>
-                    {answer.description}{<img className="img-Trivia" alt="" src ={answer.img} />}
+                    {answer.description}{<img className={style.imgTrivia} alt="" src ={answer.img} />}
                   </button>
                 )
               })}

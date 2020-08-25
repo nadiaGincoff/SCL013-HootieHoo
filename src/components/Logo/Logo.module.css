@@ -1,0 +1,9 @@
+.lFather{
+    display: flex;
+     justify-content:center
+}
+.lS{
+    width: 60vw;
+     height: 14h; 
+     margin-top:1rem
+}
