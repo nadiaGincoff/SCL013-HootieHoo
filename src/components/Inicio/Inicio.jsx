@@ -10,7 +10,7 @@ const hStyle ={color:'#592D84', fontSize:'26px', fontFamily:'verdana',textShadow
 const dPStyle ={textAlign:'center', height:'10vh', width:'80vw', marginLeft:'2.5rem'}
 const dBStyle={display: 'flex', flexDirection:'column', alignContent:'center', alignItems:'center', alignContent:'space-between', marginTop:'4rem'}
 const pStyle={color:'black', fontSize:'16px', fontFamily:'verdana', textAlign:'center'}
-const bStyle={height:'10vh', width:'80vw'}
+
 
 
 
