@@ -4,9 +4,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Niños from './Components/Niños'
-import Inicio from './Components/Inicio'
-import Adulto from './Components/Adultos'
+import Niños from './components/Niños/Niños'
+import Inicio from './components/Inicio/Inicio'
+import Adulto from './components/Adultos/Adultos'
 
 function App() {
   return (

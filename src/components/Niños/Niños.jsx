@@ -1,7 +1,7 @@
 import React from 'react'
-import Data from '../Data.json';
-import { Trivia } from './GameChild';
-import imagotipo from "../img/imagotipo.jpg";
+import Data from '../../Data.json';
+import { Trivia } from '../GameChild/GameChild';
+import Logo from '../Logo/Logo'
  
 
 
@@ -15,7 +15,7 @@ export const Niños = () =>{
   }
   return(
     <div>
-      <img className="imagotipo" alt="imagotipo" src={imagotipo} />
+     <Logo/>
       <Trivia onOk={onOk} onError={onError} questions={Data.questions}/>
     </div>
   )
