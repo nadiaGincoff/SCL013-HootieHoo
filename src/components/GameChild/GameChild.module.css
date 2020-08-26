@@ -1,0 +1,16 @@
+.imgTrivia {
+    width: 50%;
+    height: 50%;
+}
+
+.answer {
+    width: 20%;
+    display: inline-block;
+    color: red
+}
+
+.question {
+    font-size: 14px;
+    color: black;
+    font-family: verdana
+}
