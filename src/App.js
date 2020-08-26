@@ -4,11 +4,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Niños from './components/Niños/Niños'
+import Children from './components/Children/Children'
 import Inicio from './components/Inicio/Inicio'
 import Adulto from './components/Adultos/Adultos'
 import Navbar from './components/Nav/Navbar';
-
+import IndexOfChildren from './components/IndexOfChildren/index';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <div className="container">
         <Switch>
           <Route path="/Niños">
-            <Niños/>    
+            <IndexOfChildren />    
           </Route>
           <Route path="/Adulto">
             <Adulto/>
@@ -25,9 +25,7 @@ function App() {
             <Navbar/>
           </Route>
           <Route path="/">
-      
-            <Inicio/>
-            
+            <Inicio/>      
           </Route>
         </Switch>
       </div>

@@ -1,9 +1,10 @@
-.lFather{
+.lFather {
     display: flex;
-     justify-content:center
+    justify-content: center;
 }
-.lS{
+
+.lS {
     width: 60vw;
-     height: 14h; 
-     margin-top:1rem
+    height: 14h;
+    margin-top: 1rem;
 }
