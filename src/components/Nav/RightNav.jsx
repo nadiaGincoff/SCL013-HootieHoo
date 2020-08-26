@@ -37,10 +37,10 @@ const RightNav = ({open}) => {
     return (
         <Ul open={open}>
         <li>home</li>
-        <li>about</li>
-        <li>contact</li>
-        <li>sing in</li>
-        <li>sing up</li>  
+        <li>juegos</li>
+        <li>informacion</li>
+        <li>pinta</li>
+        <li>ruleta</li>  
       </Ul>
     )
 }
