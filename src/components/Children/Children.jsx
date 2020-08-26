@@ -3,9 +3,7 @@ import Data from '../../Data.json';
 import { Trivia } from '../GameChild/GameChild';
 import Logo from '../Logo/Logo'
  
-
-
-export const Niños = () =>{
+export const Children = () => {
   const onOk = () =>{
     alert("Respuesta Correcta")
 
@@ -13,6 +11,7 @@ export const Niños = () =>{
   const onError = () =>{
     alert("Respuesta Incorrecta")
   }
+
   return(
     <div>
      <Logo/>
@@ -21,4 +20,4 @@ export const Niños = () =>{
   )
 }
 
-export default Niños
+export default Children
