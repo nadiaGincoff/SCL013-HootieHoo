@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Children from './components/Children/Children'
 import Inicio from './components/Inicio/Inicio'
 import Adulto from './components/Adultos/Adultos'
@@ -15,6 +16,9 @@ function App() {
     <Router>
       <div className="container">
         <Switch>
+          <Route path="/trivia">
+            <Children />    
+          </Route>
           <Route path="/Niños">
             <IndexOfChildren />    
           </Route>
@@ -24,7 +28,7 @@ function App() {
           <Route path="/Menu">
             <Navbar/>
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Inicio/>      
           </Route>
         </Switch>
