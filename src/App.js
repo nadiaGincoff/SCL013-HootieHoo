@@ -7,6 +7,8 @@ import {
 import Niños from './components/Niños/Niños'
 import Inicio from './components/Inicio/Inicio'
 import Adulto from './components/Adultos/Adultos'
+import Navbar from './components/Nav/Navbar';
+
 
 function App() {
   return (
@@ -19,8 +21,13 @@ function App() {
           <Route path="/Adulto">
             <Adulto/>
           </Route>
+          <Route path="/Menu">
+            <Navbar/>
+          </Route>
           <Route path="/">
+      
             <Inicio/>
+            
           </Route>
         </Switch>
       </div>
