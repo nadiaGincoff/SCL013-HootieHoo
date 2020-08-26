@@ -1,12 +1,12 @@
-
-.container{
-
-    background-color :white;
+.container {
+    
+    background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
     height: 100vh
 }
-.hFather{
+
+.hFather {
     display: flex;
-    justify-content:center
+    justify-content: center
 }
 
 .hS{
@@ -17,11 +17,11 @@
      margin-top: 2rem;
 }
 
-.pFather{
-    text-align:center;
-     height:10vh;
-     width:80vw; 
-     margin-left:2.5rem
+.pFather {
+    text-align: center;
+    height: 10vh;
+    width: 80vw;
+    margin-left: 2.5rem
 }
 .pS{
     color:black; 
@@ -31,18 +31,19 @@
     margin-top: 3rem;
 }
 
-.bFather{
-display: flex;
- flex-direction:column;
-  align-content:center;
-   align-items:center;
-    align-content:space-between;
-     margin-top:4rem
+.bFather {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 4rem
 }
-.bInit{
+
+.bInit {
     width: 66vw;
     height: 13vh;
-    font-family:verdana;
+    font-family: verdana;
     font-size: 20px;
 background: #FFFFFF;
 border: 1px solid #592D84;
