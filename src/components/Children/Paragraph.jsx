@@ -7,8 +7,8 @@ const pStyle = {
     fontStyle: 'normal',
     fontWeight: 'bold',
     letterSpacing: '0.05em',
-    marginInlineStart: '2em',
-    marginBlockStart: '2em'
+    marginInlineStart: '1em',
+    marginBlockStart: '1em'
 }
 
 const Paragraph = (props) => {
