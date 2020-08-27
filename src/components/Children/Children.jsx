@@ -1,23 +1,25 @@
-import React from 'react'
-import Data from '../../Data.json';
-import { Trivia } from '../GameChild/GameChild';
-import Logo from '../Logo/Logo'
- 
-export const Children = () => {
-  const onOk = () =>{
-    alert("Respuesta Correcta")
+import React from "react";
+import Data from "../../Data.json";
+import Fade from "react-reveal/Fade";
+import { Trivia } from "../GameChild/GameChild";
+import Logo from "../Logo/Logo";
 
-  }
-  const onError = () =>{
-    alert("Respuesta Incorrecta")
-  }
+const Children = () => {
+  const onOk = () => {
+    alert("Respuesta Correcta");
+  };
+  const onError = () => {
+    alert("Respuesta Incorrecta");
+  };
 
-  return(
+  return (
     <div>
-     <Logo/>
-      <Trivia onOk={onOk} onError={onError} questions={Data.questions}/>
+      <Logo />
+      <Fade>
+        <Trivia onOk={onOk} onError={onError} questions={Data.questions} />
+      </Fade>
     </div>
-  )
-}
+  );
+};
 
-export default Children
+export default Children;

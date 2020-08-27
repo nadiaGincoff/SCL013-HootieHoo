@@ -46,7 +46,7 @@ const Burger = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <div>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
 
@@ -55,7 +55,7 @@ const Burger = () => {
         <div />
       </StyledBurger>
       <RightNav open={open} />
-    </>
+    </div>
   );
 };
 
