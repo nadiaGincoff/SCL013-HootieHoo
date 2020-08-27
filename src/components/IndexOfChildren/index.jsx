@@ -22,20 +22,24 @@ const CardButton = (props) => {
 
 const IndexOfChildren = () => {
   return (
-    <Fragment className="divContainer">
-      <div>
-        
+    <Fragment>
+      <div className='divContainer'>
           <HeaderKids leftImage={Girl} rightImage={Boy} />
           <Paragraph paragraph={`Aprendamos jugando`} />
-          <div className="containerCardButtons">
-            <Link to="/trivia">
-              <CardButton img={Jabier} />
+          <div className='containerCardButtons'>
+            <Link to='/trivia'>
+                <CardButton img={Jabier} />
             </Link>
-            <CardButton img={Mask} />
-            <CardButton img={Pencil} />
-            <CardButton img={Play} />
+            <Link to='/trivia'>
+                <CardButton img={Mask} />
+            </Link>
+            <Link to='/trivia'>
+                <CardButton img={Pencil} />
+            </Link>
+            <Link to='/trivia'>
+                <CardButton img={Play} />
+            </Link>
           </div>
-       
       </div>
     </Fragment>
   );

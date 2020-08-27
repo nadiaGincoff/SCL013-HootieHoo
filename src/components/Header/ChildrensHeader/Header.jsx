@@ -6,7 +6,7 @@ import Logo from '../../../img/header/header-logo.png'
 const HeaderKids = (props) => {
     return (
         <Fragment>
-            <div className='container'>
+            <div className='containerHeader'>
                 <div className='headerContainer'>
                     <img src={Logo} alt='logo-header' className='headerLogo' />
                     <Navbar />

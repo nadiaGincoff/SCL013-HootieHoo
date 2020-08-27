@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-    .container {
+    .containerHeader {
         width: 100%;
         height: 165px;
         background: linear-gradient(359.85deg, rgba(196, 196, 196, 0) -2.86%, #FFDE73 1.45%, rgba(255, 255, 255, 0.97) 78.47%);
