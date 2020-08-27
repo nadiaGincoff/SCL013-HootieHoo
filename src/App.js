@@ -15,8 +15,8 @@ function App() {
     <Router>
       <div className="container">
         <Switch>
-        <Route path="/Colorear">
-        <Navbar/>  
+        <Route path="/Colorear"> 
+        <IndexOfChildren />    
           </Route>
           <Route path="/Niños">
             <IndexOfChildren />    
