@@ -16,6 +16,9 @@ function App() {
     <Router>
       <div className="container">
         <Switch>
+        <Route path="/Menu">
+        
+          </Route>
           <Route path="/trivia">
             <Children />    
           </Route>

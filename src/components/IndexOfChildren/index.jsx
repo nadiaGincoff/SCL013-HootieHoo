@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import HeaderKids from "../Header/ChildrensHeader/Header";
 import "./index.css";
 import { Link } from "react-router-dom";
-import Reveal from "react-reveal/Fade";
 import Girl from "../../img/header/header-girl.png";
 import Boy from "../../img/header/header-boy.png";
 import Jabier from "../../img/card-button/jabier-jabon.png";
