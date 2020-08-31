@@ -1,0 +1,131 @@
+[
+      {
+        "id": "1",
+        "description": "¿Qué elemento debes usar para lavar tus manos y prevenir el COVID-19?",
+        "answers":[
+          {
+            "description": "Jabón",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/jkitjEe.png"
+          }, 
+          {
+            "description": "Ketchup",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/kz8SIFf.png"
+          }, 
+          {
+            "description": "Cooffe",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/pcracb7.png"
+          },
+          {
+            "description": "Cloro",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/aKD7OzX.png"
+          }  
+        ]
+      },
+      {
+        "id": "2",
+        "description": "¿Cuál es el uso correcto de la mascarilla?",
+        "answers":[
+          {
+            "description": "En la oreja",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/jfcvYgx.png"
+          }, 
+           {
+            "description": "En las manos",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/xMAUwAd.png"
+          },
+          {
+            "description": "Tapando la boca y nariz",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/nxVt74z.png"
+          },
+          {
+            "description": "En los pies",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/xMAUwAd.png"
+          }        
+        ]
+      },
+      {
+        "id": "3",
+        "description": "¿Cuál es la forma correcta de taparse al estornudar o toser?",
+        "answers":[
+          {
+            "description": "b ",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/gOMkfQw.png"
+          }, 
+          {
+            "description": "a",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/r7Ia7w4.png"
+          },
+           {
+            "description": "c",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/yEpaXEm.png"
+          },
+          {
+            "description": "d",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/UFGxXn5.png"
+          }        
+        ]
+      },
+      {
+        "id": "4",
+        "description": "¿Cuál es el uso correcto de la mascarilla?",
+        "answers":[
+          {
+            "description": "Tapando la boca y nariz",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/nxVt74z.png"
+          },
+          {
+            "description": "En la oreja",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/jfcvYgx.png"
+          }, 
+           {
+            "description": "En las manos",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/xMAUwAd.png"
+          },
+          {
+            "description": "En los pies",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/xMAUwAd.png"
+          }        
+        ]
+      },
+      {
+        "id": "5",
+        "description": " Cual es uso correcto de las mascarilla?",
+        "answers":[
+          {
+            "description": "20 Segundos",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/wzbBOmI.jpg"
+          },
+          {
+            "description": "50 Segundos",
+            "isCorrect": false,
+            "img" : ""
+          }, 
+           {
+            "description": "1 Minuto",
+            "isCorrect": false
+          },
+          {
+            "description": "40 Segundos",
+            "isCorrect": false,
+            "img" : ""
+          }        
+        ]
+      }
+    ]
