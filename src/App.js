@@ -10,6 +10,7 @@ import Adulto from './components/Adultos/Adultos'
 import Navbar from './components/Nav/Navbar';
 import IndexOfChildren from './components/IndexOfChildren/index';
 import MenuPaint from './components/PaintChildren/MenuPaint';
+import PaintChildrenOne from './components/PaintChildren/PaintChildrenOne';
 
 function App() {
   return (
@@ -17,12 +18,13 @@ function App() {
       <div className="container">
       <Switch>
         <Route path="/MenuColorearImg2" exact>
+
           
         
           </Route>
   
         <Route path="/MenuColorearImg1"exact>
- 
+        <PaintChildrenOne/>
         
           </Route>
      
