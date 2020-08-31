@@ -9,6 +9,7 @@
     #c0e7f7 -2.86%,
     rgba(255, 255, 255, 0.97) 78.47%
   );
+  height: 100vh;
   width: auto;
   overflow: hidden;
 }
