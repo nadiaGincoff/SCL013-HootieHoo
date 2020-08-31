@@ -61,6 +61,7 @@ class PaintChildrenOne extends Component {
                 canvasWidth={this.state.width}
                 canvasHeight={this.state.height}
                 imgSrc={patrulla}
+                style={{zIndex: '0'}}
               />
             </div>
           
