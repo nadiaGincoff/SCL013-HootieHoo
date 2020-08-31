@@ -4,10 +4,10 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import Girl from "../../img/header/header-girl.png";
 import Boy from "../../img/header/header-boy.png";
-import Jabier from "../../img/card-button/jabier-jabon.png";
-import Mask from "../../img/card-button/mask.png";
-import Pencil from "../../img/card-button/pencil.png";
-import Play from "../../img/card-button/play.png";
+import Jabier from "../../img/card-button/menu/jabier-jabon.png";
+import Mask from "../../img/card-button/menu/mask.png";
+import Pencil from "../../img/card-button/menu/pencil.png";
+import Play from "../../img/card-button/menu/play.png";
 import Paragraph from "../Children/Paragraph";
 import "./index.css";
 
