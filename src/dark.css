@@ -1,0 +1,21 @@
+
+body.dark-mode .containerHeader {
+    background: linear-gradient(359.85deg, #0B4258 1.45%, #1F1630 78.47%);
+}
+
+body.dark-mode p {
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background: #dad3d3 !important;
+    box-shadow: 1px 3px 0 1px #2f3139;
+}
+
+body.dark-mode .divContainer {
+    background: linear-gradient(0deg, #1F1630, #1F1630);
+}
+
+body.dark-mode .containerCardButtonsGame {
+    background: #0B4258;
+}
