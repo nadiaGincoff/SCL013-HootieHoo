@@ -29,7 +29,7 @@ class PaintChildrenTwo extends Component {
         <div  className={style.divContainer}>
           <HeaderKids leftImage={together} rightImage={puma} />
 
-          <div>
+         
             <div className={style.tools}>
               <button
                 onClick={() => {
@@ -60,7 +60,7 @@ class PaintChildrenTwo extends Component {
                 imgSrc={leonCorona}
               />
             </div>
-          </div>
+          
           <div>
             <Link to="/MenuColorear">
               <img className={style.bBack} src={bRegresar}></img>

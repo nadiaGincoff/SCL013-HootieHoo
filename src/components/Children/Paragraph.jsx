@@ -11,7 +11,8 @@ const pStyle = {
     marginInlineEnd: '1em',
     marginBlockEnd: '1em',
     marginBlockStart: '1em',
-    textAlign: 'center'
+    textAlign: 'center',
+    
 }
 
 const Paragraph = (props) => {

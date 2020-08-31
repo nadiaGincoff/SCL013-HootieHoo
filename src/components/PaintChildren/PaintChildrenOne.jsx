@@ -7,6 +7,7 @@ import puma from "../../img/header/header-puma.png";
 import HeaderKids from "../Header/ChildrensHeader/Header";
 import bRegresar from "../../assets/img/botonregresar.png";
 import { Link } from "react-router-dom";
+import Paragraph from "../Children/Paragraph";
 
 class PaintChildrenOne extends Component {
   state = {
@@ -28,8 +29,9 @@ class PaintChildrenOne extends Component {
       <Fragment>
         <div div className={style.divContainer}>
           <HeaderKids leftImage={together} rightImage={puma} />
+          <Paragraph  paragraph={`Elige la imagen a colorear`} />
 
-          <div>
+       
             <div className={style.tools}>
               <button
                 onClick={() => {
@@ -51,6 +53,7 @@ class PaintChildrenOne extends Component {
               </div>
             </div>
             <div className={style.dFCanvas}>
+              
               <CanvasDraw
                 ref={(canvasDraw) => (this.saveableCanvas = canvasDraw)}
                 brushColor={this.state.color}
@@ -60,7 +63,7 @@ class PaintChildrenOne extends Component {
                 imgSrc={patrulla}
               />
             </div>
-          </div>
+          
           <div>
             <Link to="/MenuColorear">
               <img className={style.bBack} src={bRegresar}></img>
