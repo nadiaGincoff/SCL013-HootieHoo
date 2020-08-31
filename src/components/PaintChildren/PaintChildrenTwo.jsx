@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from "react";
 import CanvasDraw from "react-canvas-draw";
 import style from "../PaintChildren/PaintChildrenOne.module.css";
-import patrulla from "../../assets/img/patrulla1.png";
+import leonCorona from "../../assets/img/imagencoronaleon.jpg";
 import together from "../../img/header/header-together.png";
 import puma from "../../img/header/header-puma.png";
 import HeaderKids from "../Header/ChildrensHeader/Header";
 import bRegresar from "../../assets/img/botonregresar.png";
 import { Link } from "react-router-dom";
 
-class PaintChildrenOne extends Component {
+class PaintChildrenTwo extends Component {
   state = {
     color: "#ffc600",
     width: 363,
@@ -26,7 +26,7 @@ class PaintChildrenOne extends Component {
   render() {
     return (
       <Fragment>
-        <div div className={style.divContainer}>
+        <div  className={style.divContainer}>
           <HeaderKids leftImage={together} rightImage={puma} />
 
           <div>
@@ -57,7 +57,7 @@ class PaintChildrenOne extends Component {
                 brushRadius={this.state.brushRadius}
                 canvasWidth={this.state.width}
                 canvasHeight={this.state.height}
-                imgSrc={patrulla}
+                imgSrc={leonCorona}
               />
             </div>
           </div>
@@ -72,4 +72,4 @@ class PaintChildrenOne extends Component {
   }
 }
 
-export default PaintChildrenOne;
+export default PaintChildrenTwo;

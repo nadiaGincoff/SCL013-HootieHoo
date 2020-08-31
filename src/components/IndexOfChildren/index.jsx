@@ -33,10 +33,10 @@ const IndexOfChildren = () => {
             <Link to='/trivia'>
                 <CardButton img={Mask} />
             </Link>
-            <Link to='/MenuColorear'>
+            <Link to='/menucolorear'>
                 <CardButton img={Pencil} />
             </Link>
-            <Link to='/trivia'>
+            <Link to='/videos'>
                 <CardButton img={Play} />
             </Link>
           </div>

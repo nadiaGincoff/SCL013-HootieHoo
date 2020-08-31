@@ -1,0 +1,45 @@
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
+.divContainer {
+  background: linear-gradient(
+    359.85deg,
+    #c0e7f7 -2.86%,
+    rgba(255, 255, 255, 0.97) 78.47%
+  );
+  width: auto;
+  overflow: hidden;
+}
+
+
+p {
+  line-height: 1.6em;
+}
+
+.tools {
+  display: flex;
+
+  width: 400px;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.dFCanvas {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #000000;
+
+  width: 370px;
+  height: 500px;
+  margin-left: 1.6rem;
+  margin-top: 1rem;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+.bBack {
+  margin-left: 1.7rem;
+  margin-top: 0.3rem;
+}
