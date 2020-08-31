@@ -24,15 +24,16 @@ const IndexOfChildren = () => {
     <Fragment>
       <div className='divContainer'>
           <HeaderKids leftImage={Girl} rightImage={Boy} />
-          <Paragraph paragraph={`Aprendamos jugando`} />
+       
           <div className='containerCardButtons'>
+          <Paragraph paragraph={`Aprendamos jugando`} />
             <Link to='/trivia'>
                 <CardButton img={Jabier} />
             </Link>
             <Link to='/trivia'>
                 <CardButton img={Mask} />
             </Link>
-            <Link to='/trivia'>
+            <Link to='/MenuColorear'>
                 <CardButton img={Pencil} />
             </Link>
             <Link to='/trivia'>
