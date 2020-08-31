@@ -1,0 +1,23 @@
+.divContainer {
+    background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+  .containerVideo{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 50px;
+        padding: 15px;
+    
+  }
+  .fatherbutBack{
+      margin-top:16.3rem
+  }
+  .bBack{
+    margin-left: 3.5rem
+    }
