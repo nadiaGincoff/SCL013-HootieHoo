@@ -14,9 +14,11 @@ const paragraph = `Tus respuestas correctas son: `
 const QuizResult = (props) => {
     return ( 
         <div>
-            <Speech text={ paragraph + props.gameResult} ></Speech>
-            <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph>
-            <img src={props.resultImage} alt='jabierResult' />
+            <Jump>
+                <Speech text={ paragraph + props.gameResult} ></Speech>
+                <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph>
+                <img src={props.resultImage} alt='jabierResult' />
+            </Jump>
         </div>
     );
 }
@@ -36,6 +38,7 @@ const Questions = () => {
         }
     )
 
+    // Leer data desde JSONManager
     useEffect(() => {
         JSONManager.getQuestions()
         .then(questions => {
@@ -43,7 +46,8 @@ const Questions = () => {
             setCurrentQuestion(questions[0])
         })
     }, [])
-
+    
+    // Guardo las respuestas correctas, sino continuo con la trivia
     const sendAnswer = (isCorrect) => {
         if ( isCorrect ) {
             setRightAnswers(rightAnswers + 1)
@@ -55,35 +59,33 @@ const Questions = () => {
         setQuestionIndex(questionIndex + 1)
         setCurrentQuestion(questions[questionIndex])
     } 
+
+    // El juego continua si hay respuestas por responder
     if (gameState) {
         return ( 
             <div>
                 <Jump>
-                <div className="containerQuestions">
-                    <div key={ currentQuestion.id } > 
-                    <Pulse spy={rightAnswers}>
-                        <div>
-                            <Paragraph paragraph={currentQuestion.description}></Paragraph>
+                    <div className="containerQuestions">
+                        <div key={ currentQuestion.id } > 
+                            <div>
+                                <Paragraph paragraph={currentQuestion.description}></Paragraph>
+                            </div>
+                            <div className='containerCardButtonsGame'>
+                                { currentQuestion.answers.map(answer => (
+                                    <Pulse>     
+                                        <div className='containerCardGame'>
+                                            <img onClick={() => { sendAnswer(answer.isCorrect) }} className='imgCardButtonGame' src={ answer.img } />
+                                        </div>    
+                                    </Pulse>                         
+                                ))}
+                           </div>                                                  
                         </div>
-                        <div className='containerCardButtonsGame'>
-                            { currentQuestion.answers.map(answer => (
-                                
-                                
-                                <div className='containerCardGame'>
-                                   
-                                        <img onClick={() => { sendAnswer(answer.isCorrect) }} className='imgCardButtonGame' src={ answer.img } />
-                                   
-                                </div>   
-                            
-                            ))}
-                       </div>
-                    
-                    </Pulse>
                     </div>
-                </div>
                 </Jump>
             </div> 
         );
+
+    // Renderiza según cantidad de respuestas
     } else if (rightAnswers < 3) {
         console.log(rightAnswers)
         return (
@@ -91,7 +93,6 @@ const Questions = () => {
                 <Jump>
                     <QuizResult gameResult={rightAnswers} resultImage={YouLost}></QuizResult>
                 </Jump>
-            
             </div>
 
         )

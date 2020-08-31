@@ -1,7 +1,7 @@
 [
       {
         "id": "1",
-        "description": "¿Qué elemento debes usar para lavar tus manos y prevenir el COVID-19?",
+        "description": "¿Qué elemento debes usar para lavar tus manos?",
         "answers":[
           {
             "description": "Jabón",
@@ -79,27 +79,27 @@
       },
       {
         "id": "4",
-        "description": "¿Cuál es el uso correcto de la mascarilla?",
+        "description": "¿Cuáles son los sintomas del COVID-19?",
         "answers":[
           {
-            "description": "Tapando la boca y nariz",
-            "isCorrect": true,
-            "img" : "https://i.imgur.com/nxVt74z.png"
-          },
-          {
-            "description": "En la oreja",
+            "description": "false1",
             "isCorrect": false,
-            "img" : "https://i.imgur.com/jfcvYgx.png"
+            "img" : "https://i.imgur.com/3TudKa0.png"
           }, 
+          {
+            "description": "Todas las anteriores",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/1CoVgEe.png"
+          },
            {
-            "description": "En las manos",
+            "description": "false2",
             "isCorrect": false,
-            "img" : "https://i.imgur.com/xMAUwAd.png"
+            "img" : "https://i.imgur.com/KuOUOQ7.png"
           },
           {
-            "description": "En los pies",
+            "description": "false3",
             "isCorrect": false,
-            "img" : "https://i.imgur.com/xMAUwAd.png"
+            "img" : "https://i.imgur.com/WRTigvq.png"
           }        
         ]
       },

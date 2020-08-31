@@ -1,7 +1,6 @@
 .divContainerGame {
     background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
     height: 100vh;
-
 }
 
 .containerCardGame {
@@ -11,8 +10,7 @@
     margin-block-start: 1em;
     margin-block-end:1em;
     margin-inline-start: 1em;
-    margin-inline-end:1em;
-    
+    margin-inline-end:1em;  
 }
 
 .containerCardGame:hover {
