@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import HeaderKids from "../Header/ChildrensHeader/Header";
 import "./index.css";
 import { Link } from "react-router-dom";
-import Reveal from "react-reveal/Fade";
 import Girl from "../../img/header/header-girl.png";
 import Boy from "../../img/header/header-boy.png";
 import Jabier from "../../img/card-button/menu/jabier-jabon.png";
@@ -25,18 +24,19 @@ const IndexOfChildren = () => {
     <Fragment>
       <div className='divContainer'>
           <HeaderKids leftImage={Girl} rightImage={Boy} />
-          <Paragraph paragraph={`Aprendamos jugando`} />
+       
           <div className='containerCardButtons'>
+          <Paragraph paragraph={`Aprendamos jugando`} />
             <Link to='/trivia'>
                 <CardButton img={Jabier} />
             </Link>
             <Link to='/trivia'>
                 <CardButton img={Mask} />
             </Link>
-            <Link to='/trivia'>
+            <Link to='/menucolorear'>
                 <CardButton img={Pencil} />
             </Link>
-            <Link to='/trivia'>
+            <Link to='/videos'>
                 <CardButton img={Play} />
             </Link>
           </div>
