@@ -58,6 +58,7 @@ class PaintChildrenTwo extends Component {
                 canvasWidth={this.state.width}
                 canvasHeight={this.state.height}
                 imgSrc={leonCorona}
+                style={{zIndex: '0'}}
               />
             </div>
           
