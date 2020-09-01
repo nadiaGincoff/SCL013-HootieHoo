@@ -6,12 +6,11 @@ import Pulse from 'react-reveal/Pulse';
 import Paragraph from '../Children/Paragraph';
 import YouLost from '../../img/game-result/youlost.png'
 import YouWin from '../../img/game-result/youwin.png'
-import Star from '../../img/game-result/star.png'
-import Speech from 'react-speech';
 import { useSpeechSynthesis } from 'react-speech-kit'
+import Modal from 'react-modal'
 
 const paragraph = `Tus respuestas correctas son: `
-
+Modal.setAppElement('#root')
 const QuizResult = (props) => {
     return ( 
         <div>
@@ -26,6 +25,7 @@ const QuizResult = (props) => {
 
 const Questions = () => {
     const { speak } = useSpeechSynthesis(); 
+    const [ isMenuOpen, setIsMenuOpen ] = useState(false);
     const [ gameState, setGameState ] = useState(true)
     const [ rightAnswers, setRightAnswers ] = useState(0)
     const [ questions, setQuestions ] = useState([])
@@ -50,13 +50,16 @@ const Questions = () => {
     // Guardo las respuestas correctas, sino continuo con la trivia
     const sendAnswer = (isCorrect) => {
         if ( isCorrect ) {
-            
             setRightAnswers(rightAnswers + 1)
         }
         if ( questionIndex === questions.length ) {
             setGameState(false)
             return
         }
+        if ( questionIndex > 5) {
+            setIsMenuOpen(true)
+        }
+        
         setQuestionIndex(questionIndex + 1)
         setCurrentQuestion(questions[questionIndex])
     } 
@@ -81,7 +84,7 @@ const Questions = () => {
                                         </div>    
                                     </Pulse>                         
                                 ))}
-             -              </div>                                                  
+                            </div>                                                  
                         </div>
                     </div>
                 </Jump>
@@ -90,17 +93,21 @@ const Questions = () => {
 
     // Renderiza según cantidad de respuestas
     } else if (rightAnswers < 3) {
-        console.log(rightAnswers)
+        
         return (
+           
             <div>
-                <Jump>
-                    <QuizResult gameResult={rightAnswers} resultImage={YouLost}></QuizResult>
-                </Jump>
+                
+                   
+                    <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
+                        <QuizResult gameResult={rightAnswers} resultImage={YouLost}></QuizResult>
+                    </Modal>
+                                 
+               
             </div>
 
         )
     } else {
-        console.log(rightAnswers)
         return (
             <div>
                 <Jump >

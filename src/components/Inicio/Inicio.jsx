@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { Animated } from "react-animated-css";
 import style from "../Inicio/Inicio.module.css";
+import useThemeSwitcher from '../../hooks/useThemeSwitcher'
 
 const Inicio = () => {
+  const ThemeSwitcher = useThemeSwitcher();
+
   return (
     <Fragment>
       <div className={style.container}>
+        {ThemeSwitcher}
         <div>
           <Logo />
           <div>

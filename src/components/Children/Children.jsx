@@ -7,7 +7,6 @@ import AngryCrown from '../../img/header/covid-corona.png';
 import Jabier from '../../img/header/header-jabier.png';
 import Questions from "../GameChild/Quiz";
 
-
 const Children = () => {
 
   return (

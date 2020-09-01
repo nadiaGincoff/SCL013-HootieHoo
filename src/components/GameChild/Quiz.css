@@ -36,3 +36,28 @@
     justify-content: center;
     overflow: hidden;
 }
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 200ms ease-in-out;
+}
+  
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateX(0px);
+}
+  
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.modalStyle{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+}

@@ -11,7 +11,7 @@ import Pencil from "../../img/card-button/menu/pencil.png";
 import Play from "../../img/card-button/menu/play.png";
 import Paragraph from "../Children/Paragraph";
 import {BackButton} from "../PaintChildren/MenuPaint"
-import "./index.css";
+
 
 const CardButton = (props) => {
   return (
@@ -22,14 +22,14 @@ const CardButton = (props) => {
 };
 
 const IndexOfChildren = () => {
+
+
   return (
     <Fragment>
       <div className='divContainer'>
           <HeaderKids leftImage={Girl} rightImage={Boy} />
           <Paragraph paragraph={`Aprendamos jugando`} />
           <div className='containerCardButtons'>
-
-         
             <Link to='/trivia'>
                 <CardButton img={Jabier} />
             </Link>

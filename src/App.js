@@ -16,8 +16,8 @@ function App() {
     <Router>
       <div className="container">
         <Switch>
-        <Route path="/videos" exact>
-       <VideoPlayer/>
+          <Route path="/videos" exact>
+            <VideoPlayer/>
           </Route>
           <Route path="/menucolorearimg2" exact>
             <PaintChildrenTwo />

@@ -1,4 +1,3 @@
-  
 import React, { Component } from 'react';
 import ReactImageVideoLightbox from 'react-image-video-lightbox';
 import HeaderKids from "../Header/ChildrensHeader/Header";
@@ -8,8 +7,6 @@ import hootie from '../../img/header/header-hootie.png'
 import puma from '../../img/header/header-puma.png'
 import { Link } from "react-router-dom";
 import bRegresar from '../../assets/img/botonregresar.png'
-
-
 
 class VideoPlayer extends Component {
 
