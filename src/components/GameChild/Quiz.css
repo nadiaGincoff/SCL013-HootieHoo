@@ -4,7 +4,7 @@
 }
 
 .containerCardGame {
-    width: 135px;
+    width: auto;
     height: 149px;
     border-radius: 10px;
     margin-block-start: 1em;
@@ -21,13 +21,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .containerCardGame img {
-    width: 135px;
+    width: auto;
     height: 149px;
 }
 
 .containerCardButtonsGame {
-    margin-inline-start: 1em;
-    margin-inline-end: 1em;
+    margin-inline-start: 2em;
+    margin-inline-end: 2em;
+    margin-block-end: 2em;
     background: rgba(89, 45, 132, 0.39);
     border-radius: 15px;
     display: flex;

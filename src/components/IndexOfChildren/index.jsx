@@ -10,6 +10,7 @@ import Mask from "../../img/card-button/menu/mask.png";
 import Pencil from "../../img/card-button/menu/pencil.png";
 import Play from "../../img/card-button/menu/play.png";
 import Paragraph from "../Children/Paragraph";
+import {BackButton} from "../PaintChildren/MenuPaint"
 import "./index.css";
 
 const CardButton = (props) => {
@@ -43,6 +44,9 @@ const IndexOfChildren = () => {
             </Link>
           
           </div>
+          <Link to='/'>
+            <BackButton></BackButton>
+          </Link>
       </div>
     </Fragment>
   );

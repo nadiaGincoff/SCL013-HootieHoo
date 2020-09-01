@@ -9,6 +9,7 @@ import MenuPaint from "./components/PaintChildren/MenuPaint";
 import PaintChildrenOne from "./components/PaintChildren/PaintChildrenOne";
 import PaintChildrenTwo from "./components/PaintChildren/PaintChildrenTwo";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import "./dark.css"
 
 function App() {
   return (

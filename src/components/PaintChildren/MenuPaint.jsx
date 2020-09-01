@@ -9,7 +9,13 @@ import mini2 from '../../assets/img/minicolorear2.png'
 import bRegresar from '../../assets/img/botonregresar.png'
 import style from '../PaintChildren/MenuPaint.module.css'
 
-
+export const BackButton = () => {
+    return (
+        <div>
+            <img className={style.bBack}src={bRegresar}></img>
+        </div>
+    )
+}
 
 const MenuPaint = () => {
     return (
@@ -32,8 +38,7 @@ const MenuPaint = () => {
             </div>
             <div>
                 <Link to='/Niños'>
-                <img  className={style.bBack}src={bRegresar}>
-                </img>
+                <BackButton></BackButton>
                 </Link>
             </div>
             </div>
