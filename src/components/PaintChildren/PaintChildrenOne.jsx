@@ -29,9 +29,7 @@ class PaintChildrenOne extends Component {
       <Fragment>
         <div div className={style.divContainer}>
           <HeaderKids leftImage={together} rightImage={puma} />
-          <Paragraph  paragraph={`Elige la imagen a colorear`} />
-
-       
+      
             <div className={style.tools}>
               <button className={style.bClear}
                 onClick={() => {

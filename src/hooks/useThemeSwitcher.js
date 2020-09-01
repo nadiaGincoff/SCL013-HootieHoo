@@ -9,7 +9,7 @@ const useThemeSwitcher = () => {
             localStorage.setItem('mode', 'dark');
         } else {
             document.body.classList.remove('dark-mode');
-            localStorage.setItem('mode', 'dark');
+            localStorage.setItem('mode', 'light');
         }
     }, [mode])
     return (

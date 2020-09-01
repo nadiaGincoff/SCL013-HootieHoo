@@ -64,7 +64,7 @@ const Questions = () => {
     // El juego continua si hay respuestas por responder
     if (gameState) {
         return ( 
-            <div>
+            <div className='container'>
                 <Jump>
                     <div className="containerQuestions">
                         <div key={ currentQuestion.id } > 
