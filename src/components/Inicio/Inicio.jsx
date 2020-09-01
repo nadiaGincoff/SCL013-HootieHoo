@@ -34,7 +34,8 @@ const Inicio = () => {
                 </button>
               </Link>
               <Link to="/Niños">
-                <button title="Niños" className={style.bInit}>
+                
+                <button title="Niños" className={`${style.bInit} ${style.bInit2}` }>
                   {" "}
                   Soy niñ@{" "}
                 </button>

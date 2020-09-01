@@ -31,7 +31,7 @@ class PaintChildrenTwo extends Component {
 
          
             <div className={style.tools}>
-              <button
+              <button className={style.bClear}
                 onClick={() => {
                   this.saveableCanvas.clear();
                 }}
@@ -40,8 +40,9 @@ class PaintChildrenTwo extends Component {
               </button>
 
               <div>
-                <label>Ancho Brocha:</label>
+              <label className={style.brushR}>Ancho Brocha:</label>
                 <input
+                 className={style.InBr}
                   type="number"
                   value={this.state.brushRadius}
                   onChange={(e) =>

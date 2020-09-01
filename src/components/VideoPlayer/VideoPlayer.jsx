@@ -25,14 +25,15 @@ class VideoPlayer extends Component {
     return (
         <div className={style.divContainer}>
        <HeaderKids leftImage={hootie} rightImage={puma} />
-       <Paragraph  paragraph={`Puma Espuma y el Escuadron Prevención`} />
+       <Paragraph  paragraph={`Puma Espuma y el Escuadron Prevención`}   />
        
       <div className={style.containerVideo}>
         {/*<button onClick={() => { this.setState({ lightboxOpen: true }); }}>Open Lightbox</button>*/}
         {
           this.state.lightboxOpen &&
           <ReactImageVideoLightbox
-          
+          style={{marginTop: '7rem'}}
+       
             data={[
 
               { url: 'https://www.youtube.com/embed/G2BHb6kWnRc', type: 'video', altTag: 'placeholder video' },
@@ -40,7 +41,9 @@ class VideoPlayer extends Component {
             startIndex={0}
             showResourceCount={true}
             onCloseCallback={() => { this.setState({ lightboxOpen: false }); }} />
+            
         }
+       
       </div>
       <div className={style.fatherbutBack}>
                 <Link to='/Niños'>

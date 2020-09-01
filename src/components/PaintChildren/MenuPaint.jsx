@@ -17,15 +17,15 @@ const MenuPaint = () => {
             <Fragment>
                 <div className={style.divContainer}>
                 <HeaderKids leftImage={together} rightImage={puma} />
-                <Paragraph  paragraph={`Elige la imagen a colorear`} />
+                <Paragraph  paragraph={`Elige la imagen a colorear`} style={{fontSize: '24'}}/>
             <div  className={style.fatherD}>
             
             <Link to='/MenuColorearImg1'> 
-             <img className={style.imgOne} src={mini1} alt='imagen patrulla'>
+             <img className={style.imgOneTwo} src={mini1} alt='imagen patrulla'>
             </img>
             </Link>
             <Link to='/MenuColorearImg2'> 
-             <img src={mini2} alt='imagen coronavirus'>
+             <img src={mini2} className={style.imgOneTwo} alt='imagen coronavirus'>
             </img>
             </Link>
         

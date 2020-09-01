@@ -1,8 +1,5 @@
-:root {
-  --yellow: #ffc600;
-  --black: #272727;
-}
 
+@media (max-width: 658px) {
 .divContainer {
   background: linear-gradient(
     359.85deg,
@@ -22,10 +19,46 @@ p {
 
 .tools {
   display: flex;
-
+  justify-content: space-around;
   width: 400px;
   margin-top: 1rem;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem !important;
+}
+.bClear{
+  width: 47px;
+height: 29px;
+left: 36px;
+top: 173px;
+
+background: #FFFFFF;
+border: 1px solid #592D84;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+}
+.InBr{
+  width: 47px;
+  height: 29px;
+  left: 36px;
+  top: 173px;
+  
+  background: #FFFFFF;
+  border: 1px solid #592D84;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.brushR{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
 }
 .dFCanvas {
   display: flex;
@@ -34,7 +67,7 @@ p {
 
   width: 370px;
   height: 500px;
-  margin-left: 1.6rem;
+  margin-left: 1.7rem !important;
   margin-top: 1rem;
 }
 
@@ -44,4 +77,87 @@ input[type="number"] {
 .bBack {
   margin-left: 1.7rem;
   margin-top: 0.3rem;
+}
+}
+@media (max-width: 768px) {
+  .divContainer {
+    background: linear-gradient(
+      359.85deg,
+      #c0e7f7 -2.86%,
+      rgba(255, 255, 255, 0.97) 78.47%
+    );
+    height: auto;
+   
+  
+    overflow: hidden;
+  }
+  
+  
+  p {
+    line-height: 1.6em;
+  }
+  
+
+  .tools {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin-top: 1rem;
+    margin-left: 11.5rem;
+  }
+  .dFCanvas {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+  
+    width: 370px;
+    height: 500px;
+    margin-left: 12.6rem;
+    margin-top: 1rem;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+  }
+  .bBack {
+    margin-left: 3.5rem;
+    margin-top: 0.3rem;
+  }
+  .bClear{
+    width: 47px;
+  height: 29px;
+  left: 36px;
+  top: 173px;
+  
+  background: #FFFFFF;
+  border: 1px solid #592D84;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  }
+  .InBr{
+    width: 47px;
+    height: 29px;
+    left: 36px;
+    top: 173px;
+    
+    background: #FFFFFF;
+    border: 1px solid #592D84;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  .brushR{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
 }

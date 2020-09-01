@@ -1,3 +1,4 @@
+@media (max-width: 658px) {
 .divContainer {
     background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
     height: 100vh;
@@ -14,8 +15,37 @@
 }
 
 .bBack{
-margin-left: 3.5rem
+margin-left: 3.5rem;
+margin-top: -1rem;
 }
-.imgOne{
-    margin:0 0 1rem;
+.imgOneTwo{
+    margin:0 0 1rem !important;
+    width:100% !important
+    
+}
+}
+@media (max-width: 768px) {
+    .divContainer {
+        background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
+        height: 100vh;
+        overflow: hidden;
+    
+    }
+    
+    .fatherD{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem 0 0;
+    
+    }
+    
+    .bBack{
+    margin-left: 3.5rem
+    }
+    .imgOneTwo{
+          width: 122%;
+    margin-left: -9%;
+    } 
+
 }
