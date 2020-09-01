@@ -32,7 +32,7 @@ class VideoPlayer extends Component {
         {
           this.state.lightboxOpen &&
           <ReactImageVideoLightbox
-          style={{marginTop: '7rem'}}
+      
        
             data={[
 

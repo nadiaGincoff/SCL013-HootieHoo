@@ -11,7 +11,7 @@ import style from '../PaintChildren/MenuPaint.module.css'
 
 export const BackButton = () => {
     return (
-        <div>
+        <div >
             <img className={style.bBack}src={bRegresar}></img>
         </div>
     )
@@ -38,7 +38,7 @@ const MenuPaint = () => {
             </div>
             <div>
                 <Link to='/Niños'>
-                <BackButton></BackButton>
+                <BackButton ></BackButton>
                 </Link>
             </div>
             </div>

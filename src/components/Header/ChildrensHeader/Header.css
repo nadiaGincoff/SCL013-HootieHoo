@@ -1,4 +1,7 @@
-@media (max-width: 658px) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 658px) 
+ {
     .containerHeader {
         width: 100%;
         height: 165px;
@@ -17,6 +20,7 @@
         width: 80%;
         margin-block-start: -3em;
         margin-inline-start: 2em;
+        
     }
 
     .headerLogo {
@@ -24,7 +28,10 @@
         padding-left: 1em;
     }
 }
-@media (max-width: 768px) {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+ {
     .containerHeader {
         width: 100%;
        /* height: 165px;*/
@@ -43,10 +50,13 @@
         width: 80%;
         /*margin-block-start: -3em;
         margin-inline-start: 2em;*/
+        width: 82%;
+    margin-left: 4rem;
     }
 
     .headerLogo {
         padding-top: 1em;
         padding-left: 1em;
+        width: 110%;
     }
 }
