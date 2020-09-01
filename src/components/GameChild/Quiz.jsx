@@ -9,6 +9,7 @@ import YouWin from '../../img/game-result/youwin.png'
 import Star from '../../img/game-result/star.png'
 import Speech from 'react-speech';
 import { useSpeechSynthesis } from 'react-speech-kit'
+//import soundButton from './soundButton/'
 
 const paragraph = `Tus respuestas correctas son: `
 
@@ -69,7 +70,9 @@ const Questions = () => {
                     <div className="containerQuestions">
                         <div key={ currentQuestion.id } > 
                             <div>
-                                <button style={{background: 'red', width: '29px'}} onClick={() => speak({ text: currentQuestion.description })}></button>
+                                
+                                <button style={{background: '', width: '29px'}} onClick={() => speak({ text: currentQuestion.description })}><i class="fas fa-volume-up"></i></button>
+
                                 <Paragraph paragraph={currentQuestion.description} ></Paragraph>
                             </div>
                              
@@ -112,3 +115,5 @@ const Questions = () => {
 }
 
 export default Questions;
+
+//<button style={{background: '', width: '29px'}} onClick={() => speak({ text: currentQuestion.description })}><i class="fas fa-volume-up"></i></button>
