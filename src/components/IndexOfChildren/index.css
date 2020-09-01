@@ -1,3 +1,20 @@
+/************/
+/* Estilo para parrafo */
+.pStyle {
+    color: black;
+    font-size: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-inline-start: 1.5em;
+    margin-inline-end: 1.5em;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    text-align: center;
+}
+/************/
+
 .divContainer {
     background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
     height: 100vh;
@@ -5,10 +22,11 @@
 }
 
 .containerCard {
-    width: 150px;
+    width: auto;
     height: 165px;
     border-radius: 10px;
     margin-block-start: 1em;
+    margin-block-end: 1em;
     margin-inline-start: 1em;
     margin-inline-end: 1em;
     z-index: -1;
@@ -31,7 +49,7 @@
 .containerCardButtons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     z-index: -1;
 }
 

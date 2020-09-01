@@ -8,6 +8,7 @@ import YouLost from '../../img/game-result/youlost.png'
 import YouWin from '../../img/game-result/youwin.png'
 import Star from '../../img/game-result/star.png'
 import Speech from 'react-speech';
+import { useSpeechSynthesis } from 'react-speech-kit'
 
 const paragraph = `Tus respuestas correctas son: `
 
@@ -15,7 +16,6 @@ const QuizResult = (props) => {
     return ( 
         <div>
             <Jump>
-                <Speech text={ paragraph + props.gameResult} ></Speech>
                 <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph>
                 <img src={props.resultImage} alt='jabierResult' />
             </Jump>
@@ -25,7 +25,7 @@ const QuizResult = (props) => {
  
 
 const Questions = () => {
-
+    const { speak } = useSpeechSynthesis(); 
     const [ gameState, setGameState ] = useState(true)
     const [ rightAnswers, setRightAnswers ] = useState(0)
     const [ questions, setQuestions ] = useState([])
@@ -50,6 +50,7 @@ const Questions = () => {
     // Guardo las respuestas correctas, sino continuo con la trivia
     const sendAnswer = (isCorrect) => {
         if ( isCorrect ) {
+            
             setRightAnswers(rightAnswers + 1)
         }
         if ( questionIndex === questions.length ) {
@@ -68,8 +69,10 @@ const Questions = () => {
                     <div className="containerQuestions">
                         <div key={ currentQuestion.id } > 
                             <div>
-                                <Paragraph paragraph={currentQuestion.description}></Paragraph>
+                                <button style={{background: 'red', width: '29px'}} onClick={() => speak({ text: currentQuestion.description })}></button>
+                                <Paragraph paragraph={currentQuestion.description} ></Paragraph>
                             </div>
+                             
                             <div className='containerCardButtonsGame'>
                                 { currentQuestion.answers.map(answer => (
                                     <Pulse>     
@@ -78,7 +81,7 @@ const Questions = () => {
                                         </div>    
                                     </Pulse>                         
                                 ))}
-                           </div>                                                  
+             -              </div>                                                  
                         </div>
                     </div>
                 </Jump>
