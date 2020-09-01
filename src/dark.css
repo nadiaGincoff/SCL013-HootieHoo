@@ -1,6 +1,7 @@
 
 body.dark-mode .containerHeader {
-    background: linear-gradient(359.85deg, #0B4258 1.45%, #1F1630 78.47%);
+    filter: drop-shadow(0px 2px 2px rgba(236, 236, 236, 0.116));
+    background: linear-gradient(359.85deg, #0B4258 1.45%, #000008 78.47%);
 }
 
 body.dark-mode p {
@@ -13,9 +14,44 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .divContainer {
+    background: linear-gradient(0deg, #1F1630, #000008);
+}
+
+body.dark-mode .MenuPaint_divContainer__1Z4D1 {
+    background: linear-gradient(0deg, #1F1630, #000008);
+}
+body.dark-mode .PaintChildrenOne_divContainer__3nr_P {
+    background: linear-gradient(0deg, #1F1630, #000008);
+}
+
+body.dark-mode .Inicio_container__3qTKL {
     background: linear-gradient(0deg, #1F1630, #1F1630);
+}
+
+body.dark-mode .Inicio_hS__34V5G {
+    color: #fff;
 }
 
 body.dark-mode .containerCardButtonsGame {
     background: #0B4258;
+    filter: drop-shadow(0px 2px 2px rgba(236, 236, 236, 0.116));
+}
+
+body.dark-mode .ioRaoB div {
+    background-color: #fff;
+}
+
+body.dark-mode .containerCard {
+    filter: drop-shadow(0px 2px 2px rgba(236, 236, 236, 0.116));
+}
+
+body.dark-mode .containerCard:focus {
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+body.dark-mode .containerCard:hover {
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+body.dark-mode .eHOnfu {
+    background: #1F1630;
 }

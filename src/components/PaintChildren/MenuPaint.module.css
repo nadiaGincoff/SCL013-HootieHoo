@@ -9,12 +9,12 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem 0 0;
+    margin: 2rem 0 2rem;
 
 }
 
 .bBack{
-margin-left: 3.5rem
+margin-left: 2rem
 }
 .imgOne{
     margin:0 0 1rem;
