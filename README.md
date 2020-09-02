@@ -5,7 +5,12 @@ PROYECTO EMPRESA HOOTIEHOO
 El 2020 nos a mostrado barreras que no eran percibidas por muchos de nosotros, nos ha mostrado la vulnerabilidad de la educacion y como esta no es accesible para todos. Hootiehoo nos solicito una app que cumpla con 3 objetivos:
 **inclusion**, **gamificacion** e identidad corporativa. En base a esto se realizo una investigación que incluyo a personas con disminución visual específicamente daltonismo, glaucoma y monócromatismo.
 
-El 20% de la población mundial tiene un grado de discapacidad visual. En chile ese monto llega a aproximadamente 850.000 personas. Es por esto que el Servicio Nacional de la Discapacidad SENADIS, ha dispuesto una serie de sugerencias para generar textos inclusivos para este grupo de personas  Tomando en cuenta las recomendaciones de SENADIS y realizando testeos de contrastes de tipografías y fondos de pantalla se realizo una encuesta tomando en cuenta 3 puntos Colores de fondo , tipografías y colores de tipografías según el contraste de este estudio se desprende la siguiente información ilustrada en los siguientes gráficos:
+El 20% de la población mundial tiene un grado de discapacidad visual. En chile ese monto llega a aproximadamente 850.000 personas. Es por esto que el Servicio Nacional de la Discapacidad SENADIS, ha dispuesto una serie de sugerencias para generar textos inclusivos para este grupo de personas. 
+
+#Investigación 
+
+Tomando en cuenta las recomendaciones de SENADIS y realizando testeos de contrastes de tipografías y fondos de pantalla se realizo una encuesta tomando en cuenta 3 puntos colores de fondo , tipografías y colores de tipografías según el contraste.
+El grupo de estudio estuvo compuesto por 18 usuari@s, de los cuales 7 tienen tienen alguna dificultad visual de las anteriormente mencionadas. De esta forma se desprende la siguiente información ilustrada en los siguientes gráficos:
 
 ![imagen gráficos](http://imgfz.com/i/IlmckTr.png)
 ![imagen gráficos](http://imgfz.com/i/tvyb2RO.png)
@@ -40,6 +45,13 @@ Gamificación: Trivia, modal de reconocimiento o incentivo para continuar, dibuj
 
 Recorrido por nuestro prototipo de alta fidelidad en Figma [aquí](https://www.figma.com/proto/Ae3mgLGmtvSdAmmdYN8nzp/Covid-19?node-id=194%3A37&viewport=-214%2C1779%2C0.27106305956840515&scaling=min-zoom)
 
-
 Ingresa a nuestra app web desde [aquí]()
+
+
+#Herramientas utilizadas 
+React 
+CSS
+GitHub
+Trello
+Figma
 
