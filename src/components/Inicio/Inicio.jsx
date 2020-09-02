@@ -6,8 +6,7 @@ import style from "../Inicio/Inicio.module.css";
 import useThemeSwitcher from '../../hooks/useThemeSwitcher'
 
 const Inicio = () => {
-  const ThemeSwitcher = useThemeSwitcher();
-
+   const ThemeSwitcher = useThemeSwitcher();
   return (
     <Fragment>
       <div className={style.container}>

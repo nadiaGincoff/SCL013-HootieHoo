@@ -24,7 +24,6 @@ const CardButton = (props) => {
 
 const IndexOfChildren = () => {
 
-
   return (
     <Fragment>
       <div className='divContainer'>
@@ -47,7 +46,7 @@ const IndexOfChildren = () => {
           </div>
           <Link to='/'>
             
-          <img className='bBack' src={bRegresar}></img>
+            <img className='bBack' src={bRegresar}></img>
          
           </Link>
       </div>

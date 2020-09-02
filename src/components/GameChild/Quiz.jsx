@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Quiz.css';
 import { JSONManager } from '../../networking/JSONManager';
+import { Link } from 'react-router-dom'
 import Jump from "react-reveal/Jump";
 import Pulse from 'react-reveal/Pulse';
 import Paragraph from '../Children/Paragraph';
@@ -9,28 +10,28 @@ import YouWin from '../../img/game-result/youwin.png'
 import Star from '../../img/game-result/star.png'
 import { useSpeechSynthesis } from 'react-speech-kit'
 import Modal from 'react-modal'
-import { Link } from 'react-router-dom'
+
 
 Modal.setAppElement('#root')
 const paragraph = `Tus respuestas correctas son: `
-const arrayRightAnswers = [];
 
+let arrayRightAnswers = [];
 
 const QuizResult = (props) => {
 
     return ( 
         <div className='modalItem'>
             <Jump>            
-                <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph>           
+                <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph> 
+                <div className='starsContainer'>
                 { 
                     arrayRightAnswers.shift(),
-                    arrayRightAnswers.map((answer) => (
-                       <div>
-                           <img src={Star} alt={answer}></img>
-                       </div>                  
-                    ))
+                    arrayRightAnswers.map((answer) => (              
+                        <img src={Star} alt={answer} />                          
+                    ))                   
                 }
-                <img src={props.resultImage} alt='jabierResult' />
+                </div>     
+                <img src={props.resultImage} alt='jabierResult' className='jabierResult'/>
             </Jump>
         </div>
     );
@@ -61,20 +62,33 @@ const Questions = () => {
         })
     }, [])
     
+    const resetGame = () => {
+        arrayRightAnswers = []
+        setCurrentQuestion(
+            {
+                id: "",
+                description: "",
+                answers: []
+            }
+        )
+        setRightAnswers(0)
+        setGameState(false)
+        setQuestions([])
+        setQuestionIndex(0)
+        setIsMenuOpen(false)
+        return
+    }
     // Guardo las respuestas correctas, sino continuo con la trivia
     const sendAnswer = (isCorrect) => {
         if ( isCorrect ) {
             setRightAnswers(rightAnswers + 1)
             arrayRightAnswers.push(rightAnswers)
-            console.log(arrayRightAnswers);
         }
         if ( questionIndex === questions.length) {
             setGameState(false)
             setIsMenuOpen(true)
             return
         }
-     
-
         setQuestionIndex(questionIndex + 1)
         setCurrentQuestion(questions[questionIndex])
     } 
@@ -107,31 +121,48 @@ const Questions = () => {
         );
 
     // Renderiza según cantidad de respuestas
-    } else if (rightAnswers < 3) {
+    } else if (rightAnswers <= 3) {
         return (
             <div>      
                 <Link to='/niños'>  
-                <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
-                    <QuizResult 
-                        gameResult={rightAnswers - 1} 
-                        resultImage={YouLost} 
-                        className='modalContent'
-                    > 
-                   
-                    </QuizResult>                 
-                </Modal>
+                    <Modal 
+                        isOpen={isMenuOpen} 
+                        onAfterClose={resetGame} 
+                        closeTimeoutMS={2000} 
+                        className='modalStyle'
+                    >
+                    <i className="fas fa-times-circle"></i>
+                        <Jump >
+                            <QuizResult 
+                                gameResult={rightAnswers - 1} 
+                                resultImage={YouLost} 
+                                className='modalContent'
+                                reset={resetGame}
+                            />  
+                        </Jump>                               
+                    </Modal>
                 </Link>
             </div>
         )
     } else {
-     
         return (
             <div>
                 <Link to='/niños'>
-                <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
-                <Jump >
-                    <QuizResult gameResult={rightAnswers - 1} resultImage={YouWin} className='modalContent'></QuizResult>
-                </Jump>
+                    <Modal 
+                        isOpen={isMenuOpen} 
+                        onAfterClose={resetGame} 
+                        closeTimeoutMS={2000} 
+                        className='modalStyle'
+                    >
+                    <i className="fas fa-times-circle"></i>
+                    <Jump >
+                        <QuizResult 
+                            gameResult={rightAnswers - 1 } 
+                            resultImage={YouWin} 
+                            className='modalContent'
+                            reset={resetGame}
+                        />
+                    </Jump>
                 </Modal>
                 </Link>
             </div>

@@ -1,17 +1,15 @@
 .ReactModal__Overlay {
-
     z-index: 10000;
     opacity: 0;
     transform: translateX(-100px);
-    transition: all 200ms ease-in-out;
-   
-    
+    transition: all 200ms ease-in-out;  
+    background-color: red;
 }
   
 .ReactModal__Overlay--after-open {
     opacity: 1;
     transform: translateX(0px);
-    background-color: #a3a3a371;
+    background-color: red;
 }
   
 .ReactModal__Overlay--before-close {
@@ -20,15 +18,13 @@
 }
 
 .modalStyle {
-    
+    margin-block-start: 15%;
     margin-inline-start: 10%;
     background: linear-gradient(
       359.85deg,
       #66ccf5 -2.86%,
-      rgba(255, 255, 255, 0.97) 78.47%
+      rgba(255, 255, 255, 0.97) 90.47%
     );
-
- 
     width: 80%;
     height: 80%;
     border: none;
@@ -36,36 +32,37 @@
 }
 
 .modalItem {
-    padding: 1em;
-    margin-block-start: 4.5em;
-    
     color: white;
+    padding: 0.5rem;
 } 
 
 .modalContent {
-    /* position: relative; */
-    /* top: 50%;
-    left: 50%; */
     transform: translate(-50%,-50%);
     text-align: center;
     font-weight: 900;
     font-family: 'Montserrat';
-    font-size: 2.5em;
-    margin-block-start: 2rem;
 }
 
 
 .modalItem::after {
   content: '';
   display: block;
-  /* width: 0;
-  height: 2px; */
   transition: width .3s;
 }
 
 .modalItem:hover::after {
-  /* width: 100%; */
   transition: width .3s;
+}
+
+.starsContainer {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.starsContainer img {
+  margin-right: 0.5em;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 658px) {

@@ -13,7 +13,7 @@ and (max-device-width : 658px)
     letter-spacing: 0.05em;
     margin-inline-start: 1.5em;
     margin-inline-end: 1.5em;
-    margin-block-end: 1em;
+    margin-block-end: 1.5em;
     margin-block-start: 1em;
     text-align: center;
 }

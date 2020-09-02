@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import DarkModeToggle from "react-dark-mode-toggle";
+import React, { useState, useEffect } from 'react';
+import style from "../hooks/useThemeSwitcher.css";
+
 
 const useThemeSwitcher = () => {
     const [mode, setMode] = useState(() => localStorage.getItem('mode'));
@@ -27,19 +28,12 @@ const useThemeSwitcher = () => {
     }
 
     return (
-        // <a className='cursor-pointer' onClick={() => setMode(mode => mode === 'dark' ? 'light' : 'dark')} >
-        //     <small>{mode === 'dark' ? 'Light' : 'Dark'} Mode</small>
-        // </a>
-        <div onClick={() => setMode(mode => mode === 'dark' ? 'light' : 'dark')}>
-            <DarkModeToggle
-                onClick={() => setMode(mode => mode === 'dark' ? 'light' : 'dark')}
-                onChange = {setIsDarkMode}
-                checked = {isDarkMode}
-                size={80}
-            >
-            {mode === 'dark' ? 'Light' : 'Dark'}
-            </DarkModeToggle>
-        </div>
+        
+        <a className='cursor-pointer' onClick={() => setMode(mode => mode === 'dark' ? 'light' : 'dark')} >
+            <div classname="containerMode">
+            <button className="buttonMode"><small>{mode === 'dark' ? 'Light' : 'Dark'} Mode</small></button>
+            </div>
+        </a>
     )
 }
 
