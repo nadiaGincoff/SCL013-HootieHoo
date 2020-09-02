@@ -105,26 +105,27 @@
       },
       {
         "id": "5",
-        "description": " Cual es uso correcto de las mascarilla?",
+        "description": "¿Quienes tienen mayor riesgo de contagio del COVID-19?",
         "answers":[
           {
-            "description": "20 Segundos",
-            "isCorrect": true,
-            "img" : "https://i.imgur.com/wzbBOmI.jpg"
+            "description": "Bebes",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/5CsBPys.png"
           },
           {
-            "description": "50 Segundos",
+            "description": "Niños",
             "isCorrect": false,
-            "img" : ""
+            "img" : "https://i.imgur.com/PEe2K5E.png"
           }, 
            {
-            "description": "1 Minuto",
-            "isCorrect": false
+            "description": "Adultos",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/reARt61.png"
           },
           {
-            "description": "40 Segundos",
-            "isCorrect": false,
-            "img" : ""
+            "description": "Abuelos",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/ZeErR5M.png"
           }        
         ]
       }
