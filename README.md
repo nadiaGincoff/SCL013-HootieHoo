@@ -9,7 +9,7 @@ El 20% de la población mundial tiene un grado de discapacidad visual. En chile 
 
 #Investigación 
 
-Tomando en cuenta las recomendaciones de SENADIS y realizando testeos de contrastes de tipografías y fondos de pantalla se realizo una encuesta tomando en cuenta 3 puntos colores de fondo , tipografías y colores de tipografías según el contraste.
+Tomando en cuenta las recomendaciones de SENADIS y realizando testeos en aplicaciones web de contrastes entre tipografías y fondos de pantalla se realizo una encuesta tomando en cuenta 3 puntos colores de fondo , tipografías y colores de tipografías según el contraste.
 El grupo de estudio estuvo compuesto por 18 usuari@s, de los cuales 7 tienen tienen alguna dificultad visual de las anteriormente mencionadas. De esta forma se desprende la siguiente información ilustrada en los siguientes gráficos:
 
 ![imagen gráficos](http://imgfz.com/i/IlmckTr.png)
