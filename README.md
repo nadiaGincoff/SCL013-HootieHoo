@@ -7,7 +7,7 @@ El 2020 nos a mostrado barreras que no eran percibidas por muchos de nosotros, n
 
 El 20% de la población mundial tiene un grado de discapacidad visual. En Chile ese monto llega a aproximadamente 850.000 personas. Es por esto que el Servicio Nacional de la Discapacidad SENADIS, ha dispuesto una serie de sugerencias para generar textos inclusivos para este grupo de personas. 
 
-#Investigación 
+**Investigación**
 
 Tomando en cuenta las recomendaciones de SENADIS y realizando testeos en aplicaciones web de contrastes entre tipografías y fondos de pantalla se realizo una encuesta tomando en cuenta 3 puntos, colores de fondo , tipografías y colores de tipografías según el contraste.
 El grupo de estudio estuvo compuesto por 18 usuari@s, de los cuales 7 tienen alguna dificultad visual de las anteriormente mencionadas. De esta forma se desprende la siguiente información ilustrada en los siguientes gráficos:
