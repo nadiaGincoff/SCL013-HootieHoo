@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import style from "../hooks/useThemeSwitcher.css";
+
 
 const useThemeSwitcher = () => {
     const [mode, setMode] = useState(() => localStorage.getItem('mode'));
@@ -13,8 +15,11 @@ const useThemeSwitcher = () => {
         }
     }, [mode])
     return (
+        
         <a className='cursor-pointer' onClick={() => setMode(mode => mode === 'dark' ? 'light' : 'dark')} >
-            <small>{mode === 'dark' ? 'Light' : 'Dark'} Mode</small>
+            <div classname="containerMode">
+            <button className="buttonMode"><small>{mode === 'dark' ? 'Light' : 'Dark'} Mode</small></button>
+            </div>
         </a>
     )
 }
