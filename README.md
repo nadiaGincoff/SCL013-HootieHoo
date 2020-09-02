@@ -24,13 +24,22 @@ En ambos perfiles se observan iconografía intuitiva en todas las areas, pues pa
 
 **Perfil de adultos**
 
+Inclusion: paleta de colores contratantes, tamaño tipografía grande, iconografía descriptiva, modo noche.
+Gamificación: Trivia, modal de reconocimiento o incentivo para continuar.
+
 ![imagen perfil adulto](http://imgfz.com/i/yFxD4i9.png) 
 
 
 **Perfil de niñ@s**
 
+Inclusion: paleta de colores contratantes, tamaño tipografía grande, iconografía descriptiva, modo noche.
+Gamificación: Trivia, modal de reconocimiento o incentivo para continuar, dibujos para colorear en linea.
+
 ![imagen perfil niñ@s](http://imgfz.com/i/95ESPem.png) 
 
 
 Recorrido por nuestro prototipo de alta fidelidad en Figma [aquí](https://www.figma.com/proto/Ae3mgLGmtvSdAmmdYN8nzp/Covid-19?node-id=194%3A37&viewport=-214%2C1779%2C0.27106305956840515&scaling=min-zoom)
+
+
+Ingresa a nuestra app web desde [aquí]()
 
