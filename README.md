@@ -19,6 +19,8 @@ La app que desarrollamos esta enfocada en adultos y niñ@s entre 4 a 7 años bas
 
 Nuestra app posee 2 perfiles de usuarios:
 
+En ambos perfiles se observan iconografía intuitiva en todas las areas, pues para una persona con disminución visual no basta un color que indique si sus respuestas fueron correctas o no es necesario un símbolo que indique el significado. Ademas se desarrollo un modo nocturno que permite ampliar el alcance de nuestra app a un mayor numero de personas con disminución visual. 
+
 **Perfil de adultos**
 
 **Perfil de niñ@s**
