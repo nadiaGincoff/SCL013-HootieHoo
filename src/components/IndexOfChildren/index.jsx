@@ -10,8 +10,9 @@ import Mask from "../../img/card-button/menu/mask.png";
 import Pencil from "../../img/card-button/menu/pencil.png";
 import Play from "../../img/card-button/menu/play.png";
 import Paragraph from "../Children/Paragraph";
-import {BackButton} from "../PaintChildren/MenuPaint"
-
+import bRegresar from '../../assets/img/botonregresar.png'
+import "./index.css";
+import styled from "styled-components";
 
 const CardButton = (props) => {
   return (
@@ -45,7 +46,9 @@ const IndexOfChildren = () => {
           
           </div>
           <Link to='/'>
-            <BackButton></BackButton>
+            
+          <img className='bBack' src={bRegresar}></img>
+         
           </Link>
       </div>
     </Fragment>

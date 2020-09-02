@@ -6,24 +6,38 @@ import Pulse from 'react-reveal/Pulse';
 import Paragraph from '../Children/Paragraph';
 import YouLost from '../../img/game-result/youlost.png'
 import YouWin from '../../img/game-result/youwin.png'
+import Star from '../../img/game-result/star.png'
 import { useSpeechSynthesis } from 'react-speech-kit'
 import Modal from 'react-modal'
+import { Link } from 'react-router-dom'
 
-const paragraph = `Tus respuestas correctas son: `
 Modal.setAppElement('#root')
+const paragraph = `Tus respuestas correctas son: `
+const arrayRightAnswers = [];
+
+
 const QuizResult = (props) => {
+
     return ( 
-        <div>
-            <Jump>
-                <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph>
+        <div className='modalItem'>
+            <Jump>            
+                <Paragraph paragraph={ paragraph + props.gameResult }></Paragraph>           
+                { 
+                    arrayRightAnswers.shift(),
+                    arrayRightAnswers.map((answer) => (
+                       <div>
+                           <img src={Star} alt={answer}></img>
+                       </div>                  
+                    ))
+                }
                 <img src={props.resultImage} alt='jabierResult' />
             </Jump>
         </div>
     );
 }
  
-
 const Questions = () => {
+    
     const { speak } = useSpeechSynthesis(); 
     const [ isMenuOpen, setIsMenuOpen ] = useState(false);
     const [ gameState, setGameState ] = useState(true)
@@ -51,15 +65,16 @@ const Questions = () => {
     const sendAnswer = (isCorrect) => {
         if ( isCorrect ) {
             setRightAnswers(rightAnswers + 1)
+            arrayRightAnswers.push(rightAnswers)
+            console.log(arrayRightAnswers);
         }
-        if ( questionIndex === questions.length ) {
+        if ( questionIndex === questions.length) {
             setGameState(false)
+            setIsMenuOpen(true)
             return
         }
-        if ( questionIndex > 5) {
-            setIsMenuOpen(true)
-        }
-        
+     
+
         setQuestionIndex(questionIndex + 1)
         setCurrentQuestion(questions[questionIndex])
     } 
@@ -67,7 +82,7 @@ const Questions = () => {
     // El juego continua si hay respuestas por responder
     if (gameState) {
         return ( 
-            <div>
+            <div className='container'>
                 <Jump>
                     <div className="containerQuestions">
                         <div key={ currentQuestion.id } > 
@@ -93,26 +108,32 @@ const Questions = () => {
 
     // Renderiza según cantidad de respuestas
     } else if (rightAnswers < 3) {
-        
         return (
-           
-            <div>
-                
+            <div>      
+                <Link to='/niños'>  
+                <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
+                    <QuizResult 
+                        gameResult={rightAnswers - 1} 
+                        resultImage={YouLost} 
+                        className='modalContent'
+                    > 
                    
-                    <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
-                        <QuizResult gameResult={rightAnswers} resultImage={YouLost}></QuizResult>
-                    </Modal>
-                                 
-               
+                    </QuizResult>                 
+                </Modal>
+                </Link>
             </div>
-
         )
     } else {
+     
         return (
             <div>
+                <Link to='/niños'>
+                <Modal isOpen={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)} closeTimeoutMS={2000} className='modalStyle'>
                 <Jump >
-                    <QuizResult gameResult={rightAnswers} resultImage={YouWin} ></QuizResult>
+                    <QuizResult gameResult={rightAnswers - 1} resultImage={YouWin} className='modalContent'></QuizResult>
                 </Jump>
+                </Modal>
+                </Link>
             </div>
         )
     }

@@ -1,3 +1,7 @@
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 658px) 
+ {
 .container {
     background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
     height: 100vh
@@ -20,7 +24,7 @@
     text-align: center;
     height: 10vh;
     width: 80vw;
-    margin-left: 2.5rem
+    margin-left: 2.56rem
 }
 .pS{
     color:black; 
@@ -56,3 +60,68 @@ color: #592D84;
 .bInit2{
     color: #EA8126;
 }
+ }
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+ {
+    .container {
+        background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
+        height: 100vh
+    }
+    
+    .hFather {
+        display: flex;
+        justify-content: center
+    }
+    
+    .hS{
+         color:#592D84;
+         font-size:42px;
+         font-family:Arial, Helvetica, sans-serif;
+         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         margin-top: 2rem;
+    }
+    
+    .pFather {
+        text-align: center;
+        height: 10vh;
+        width: 80vw;
+        margin-left: 2.5rem
+    }
+    .pS{
+        color:black; 
+        font-size:26px; 
+        font-family:Arial, Helvetica, sans-serif; 
+        text-align:center;
+        margin-top: 5rem;
+        margin-left: 4.5rem;
+    }
+    
+    .bFather {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        align-content: space-between;
+        margin-top: 7rem
+    }
+    
+    .bInit {
+        width: 66vw;
+        height: 13vh;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+    background: #FFFFFF;
+    border: 1px solid #592D84;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    border-radius: 5px;
+    margin: 20px ;
+    color: #592D84;
+    }
+    .bInit2{
+        color: #EA8126;
+    }
+ }

@@ -20,6 +20,7 @@ const useThemeSwitcher = () => {
         setMode(mode => mode === 'dark' ? 'light' : 'dark')
         
     }
+
     const checkeado = () => {
         isDarkMode
         mode
@@ -34,7 +35,7 @@ const useThemeSwitcher = () => {
                 onClick={() => setMode(mode => mode === 'dark' ? 'light' : 'dark')}
                 onChange = {setIsDarkMode}
                 checked = {isDarkMode}
-                size={150}
+                size={80}
             >
             {mode === 'dark' ? 'Light' : 'Dark'}
             </DarkModeToggle>
