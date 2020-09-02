@@ -49,9 +49,4 @@ Ingresa a nuestra app web desde [aquí]()
 
 
 #Herramientas utilizadas 
-*React 
-*CSS
-*GitHub
-*Trello
-*Figma
-
+React-GitHub-CSS-NPM-JavaScript
