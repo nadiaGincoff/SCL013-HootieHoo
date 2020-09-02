@@ -40,7 +40,7 @@ const RightNav = ({ open }) => {
       <li>Trivia</li>
       </Link>
 
-      <li>informacion</li>
+      <li>Informacion</li>
       <Link to='/menucolorear'> 
       <li>Colorea</li>
       </Link>

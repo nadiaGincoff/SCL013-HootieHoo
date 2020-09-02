@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import HeaderKids from "../Header/ChildrensHeader/Header";
-import "./index.css";
 import { Link } from "react-router-dom";
 import Jump from "react-reveal/Jump";
 import Girl from "../../img/header/header-girl.png";
@@ -34,7 +33,7 @@ const IndexOfChildren = () => {
             <Link to='/trivia'>
                 <CardButton img={Jabier} />
             </Link>
-            <Link to='/trivia'>
+            <Link to='/adulto'>
                 <CardButton img={Mask} />
             </Link>
             <Link to='/menucolorear'>
