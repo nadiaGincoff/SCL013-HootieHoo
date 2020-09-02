@@ -10,6 +10,8 @@ import PaintChildrenOne from "./components/PaintChildren/PaintChildrenOne";
 import PaintChildrenTwo from "./components/PaintChildren/PaintChildrenTwo";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import "./dark.css"
+import ComingSoon from "react-coming-soon";
+
 
 function App() {
   return (
@@ -35,7 +37,14 @@ function App() {
             <IndexOfChildren />
           </Route>
           <Route path="/adulto" exact>
-            <Adulto />
+        
+          <ComingSoon 
+            title="Sección en Construcción" 
+            bgColor="#fff" 
+            textColor="#212121" 
+            date="Mon Oct 05 2020 00:00:00 GMT-0300 (hora de verano de Chile)" 
+            illustration="web-development"
+            style={{marginTop: '150'}} />
           </Route>
           <Route exact path="/" exact>
             <Inicio />
