@@ -1,4 +1,9 @@
 
+body.dark-mode {
+    background: #1F1630;
+
+}
+
 body.dark-mode .buttonMode{
     background: white;
 
@@ -65,10 +70,14 @@ body.dark-mode .containerCard:hover {
 body.dark-mode .eHOnfu {
     background: #000008;
 }
-body.dark-mode .sc-AxjAm .bQRKVa {
-    background: #0B4258;
+body.dark-mode .gpoEAU {
+    background: #1F1630;
 }
 
 body.dark-mode .modalStyle {
     background: linear-gradient(359.85deg, #0B4258 1.45%, #000008 78.47%);
+}
+
+body.dark-mode .buttonSpeak {
+    background: #0b4258;
 }

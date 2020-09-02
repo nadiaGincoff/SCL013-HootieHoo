@@ -10,8 +10,8 @@
     "react": "^16.13.1",
     "react-animated-css": "^1.2.1",
     "react-canvas-draw": "^1.1.1",
-    "react-dark-mode-toggle": "0.0.9",
     "react-coming-soon": "^1.0.6",
+    "react-dark-mode-toggle": "0.0.9",
     "react-dom": "^16.13.1",
     "react-image-video-lightbox": "^2.0.1",
     "react-modal": "^3.11.2",
@@ -21,7 +21,8 @@
     "react-speech": "^1.0.2",
     "react-speech-kit": "^3.0.1",
     "react-transition-group": "^4.4.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "uifx": "^2.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

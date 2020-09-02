@@ -11,13 +11,12 @@ const HeaderKids = (props) => {
     return (
         <Fragment>
             <div className='containerHeader'>
-            
-                <div className='headerContainer'>
-                    
+            { ThemeSwitcher }
+                <div className='headerContainer'>         
                     <img src={Logo} alt='logo-header' className='headerLogo' />
                     <Navbar />                
                 </div>
-                { ThemeSwitcher }
+                
                 <div className='imageContainer'>
                     <img src={props.leftImage}  alt='header-image' /> 
                     <img src={props.rightImage} alt='header-image' />

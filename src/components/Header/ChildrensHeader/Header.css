@@ -1,6 +1,6 @@
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 658px) 
+and (max-device-width : 758px) 
  {
     .containerHeader {
         width: 100%;
@@ -10,13 +10,14 @@ and (max-device-width : 658px)
         border-radius: 0px 0px 30px 30px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
         position: relative;
         z-index: 1;
     }
 
     .imageContainer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 80%;
         margin-block-start: -3em;
         margin-inline-start: 2em;
@@ -25,7 +26,7 @@ and (max-device-width : 658px)
 
     .headerLogo {
         padding-top: 1em;
-        padding-left: 1em;
+        padding-left: 4em;
     }
 }
 @media only screen 
@@ -47,16 +48,18 @@ and (max-device-width : 1024px)
     .imageContainer {
         display: flex;
         justify-content: space-between;
-        width: 80%;
-        /*margin-block-start: -3em;
-        margin-inline-start: 2em;*/
         width: 82%;
-    margin-left: 4rem;
+        margin-left: 4rem;
+    }
+    .imageContainer img{
+        height: 140px;
+        width: 140px;
+     
     }
 
     .headerLogo {
         padding-top: 1em;
-        padding-left: 1em;
+        padding-left: 13.5em;
         width: 110%;
     }
 }

@@ -45,7 +45,7 @@ const IndexOfChildren = () => {
           </div>
           <Link to='/'>
             
-            <img className='bBack' src={bRegresar}></img>
+            <img className='bBackIndex' src={bRegresar}></img>
          
           </Link>
       </div>

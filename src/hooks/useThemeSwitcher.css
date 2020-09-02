@@ -1,12 +1,13 @@
-.containerMode{
-    display: flex;   
+.containerMode {
+    display: flex;
+
 }
 
-small{
+small {
     color: white;
 }
 
-.buttonMode{
+.buttonMode {
     justify-content: center;
     width: 100px;
     height: 36px;
@@ -25,4 +26,5 @@ small{
     align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
+    outline: none;
 }

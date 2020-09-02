@@ -1,123 +1,123 @@
- @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 658px) 
- {
-/************/
-/* Estilo para parrafo */
-.pStyle {
-    color: black;
-    font-size: 20px !important;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    margin-inline-start: 1.5em;
-    margin-inline-end: 1.5em;
-    margin-block-end: 1.5em;
-    margin-block-start: 1em;
-    text-align: center;
-}
-/************/
+ @media only screen and (min-device-width : 375px) and (max-device-width : 758px) {
 
-    .divContainer {
-        background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
-        height: 100vh;
-        overflow: hidden;
-    }
+     /************/
+     /* Estilo para parrafo */
+     .pStyle {
+         color: black;
+         font-size: 20px !important;
+         font-family: Arial;
+         font-style: normal;
+         font-weight: bold;
+         letter-spacing: 0.05em;
+         margin-inline-start: 1.5em;
+         margin-inline-end: 1.5em;
+         margin-block-end: 1em;
+         margin-block-start: 1em;
+         text-align: center;
+     }
 
-    .containerCard {
-        width: auto;
-        height: 165px;
-        border-radius: 10px;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 1em;
-        margin-inline-end: 1em;
-        z-index: -1;
-    }
+     /************/
 
-    .containerCard:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+     .divContainer {
+         background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
+         height: 100vh;
+         overflow: hidden;
+     }
 
-    .containerCard:focus {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+     .containerCard {
+         width: auto;
+         height: 165px;
+         border-radius: 10px;
+         margin-block-start: 1em;
+         margin-block-end: 1em;
+         margin-inline-start: 1em;
+         margin-inline-end: 1em;
+         z-index: -1;
+     }
 
-    .containerCard img {
-        width: auto;
-        overflow: hidden;
-        z-index: -1;
-    }
+     .containerCard:hover {
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
 
-.containerCardButtons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: -1;
-    margin-top: -2rem ;
-}
-.bBack{
-    margin-left: 3.5rem;
-    margin-top: -0.5rem;
-    }
-}
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
-    .pStyle {
-        color: black;
-        font-size: 30px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        margin-inline-start: 1.5em;
-        margin-inline-end: 1.5em;
-        margin-block-end: 1em;
-        margin-block-start: 1em;
-        text-align: center;
-    }
-    .divContainer {
-        background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
-        height: 100vh;
-        overflow: hidden;
-    }
-    
-    .containerCard {
-        width: 232px;
-        height: 238px;
-        border-radius: 10px;
-        margin-block-start: 1em;
-        margin-inline-start: 1em;
-        margin-inline-end: 1em;
-        z-index: -1;
-    }
-    
-    .containerCard:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    
-    .containerCard:focus {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    
-    .containerCard img {
-        width: 206px;
-        overflow: hidden;
-        z-index: -1;
-    }
-    
-    .containerCardButtons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        z-index: -1;
-    
-    }
-    
-    .bBack{
-        margin-left: 8.5rem;
-        margin-top: 2rem;
-        }
-}
+     .containerCard:focus {
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+
+     .containerCard img {
+         width: auto;
+         overflow: hidden;
+         z-index: -1;
+     }
+
+     .containerCardButtons {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         z-index: -1;
+         margin-top: -1rem;
+     }
+
+     .bBackIndex {
+         margin-left: 2.5rem;
+     }
+ }
+
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+     .pStyle {
+         color: black;
+         font-size: 30px;
+         font-family: Arial;
+         font-style: normal;
+         font-weight: bold;
+         letter-spacing: 0.05em;
+         margin-inline-start: 1.5em;
+         margin-inline-end: 1.5em;
+         margin-block-end: 1em;
+         margin-block-start: 1em;
+         text-align: center;
+     }
+
+     .divContainer {
+         background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
+         height: 100vh;
+         overflow: hidden;
+     }
+
+     .containerCard {
+         width: 232px;
+         height: 238px;
+         border-radius: 10px;
+         margin-block-end: 1em;
+         margin-block-start: 1em;
+         margin-inline-start: 1em;
+         margin-inline-end: 1em;
+         z-index: -1;
+     }
+
+     .containerCard:hover {
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+
+     .containerCard:focus {
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+
+     .containerCard img {
+         width: 206px;
+         overflow: hidden;
+         z-index: -1;
+     }
+
+     .containerCardButtons {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         z-index: -1;
+
+     }
+
+     .bBackIndex {
+         margin-left: 8.5rem;
+         margin-top: 2rem;
+     }
+ }

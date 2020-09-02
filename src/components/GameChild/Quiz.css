@@ -38,6 +38,8 @@
 
 .modalContent {
     transform: translate(-50%,-50%);
+    justify-content: column
+    ;
     text-align: center;
     font-weight: 900;
     font-family: 'Montserrat';
@@ -65,7 +67,33 @@
   margin-right: 0.5em;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 658px) {
+.questionTitleContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonSpeak {
+  margin-block-start: 6%;
+  min-width: 50px;
+  height: 50px;
+  margin-inline-end: 10%;
+  border-radius: 50px;
+  background: #592d84;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonSpeak i {
+  font-size: 20px;
+ 
+}
+
+.pStyle{
+  margin-inline-end: 0em;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 758px) {
   .divContainerGame {
     background: linear-gradient(
       359.85deg,
@@ -98,8 +126,8 @@
   }
 
   .containerCardButtonsGame {
-    margin-inline-start: 2em;
-    margin-inline-end: 2em;
+    margin-inline-start: 2.5em;
+    margin-inline-end: 2.5em;
     margin-block-end: 2em;
     background: rgba(89, 45, 132, 0.39);
     border-radius: 15px;
@@ -120,8 +148,8 @@
   }
 
   .containerCardGame {
-    width: 210px;
-    height: 154px;
+    width: 206px;
+    height: 227px;
     border-radius: 10px;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -137,13 +165,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .containerCardGame img {
-    width: 183px;
-    height: 159px;
+    width: 206px;
+    height: 227px;
   }
 
   .containerCardButtonsGame {
-    margin-inline-start: 2em;
-    margin-inline-end: 2em;
+    margin-inline-start: 2.5em;
+    margin-inline-end: 2.5em;
     margin-block-end: 2em;
     background: rgba(89, 45, 132, 0.39);
     border-radius: 15px;
@@ -151,6 +179,15 @@
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-    margin-top: 5rem;
+  }
+  
+  .buttonSpeak {
+    margin-block-start: 6%;
+    min-width: 70px;
+    height: 70px;
+    margin-inline-end: 10%;
+  }
+  .buttonSpeak i {
+    font-size: 40px;
   }
 }
