@@ -132,7 +132,7 @@ const Questions = () => {
                   className='buttonSpeak'
                   onClick={() => speak({ text: currentQuestion.description })}
                 >
-                  <i class="fas fa-volume-up" />
+                  <i className="fas fa-volume-up" />
                 </button>
               </div>
               <div className="containerCardButtonsGame">

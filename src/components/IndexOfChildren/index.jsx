@@ -28,6 +28,7 @@ const IndexOfChildren = () => {
       <div className='divContainer'>
           <HeaderKids leftImage={Girl} rightImage={Boy} />
           <Paragraph paragraph={`Aprendamos jugando`} />
+          <Jump>
           <div className='containerCardButtons'>
             <Link to='/trivia'>
                 <CardButton img={Jabier} />
@@ -43,6 +44,7 @@ const IndexOfChildren = () => {
             </Link>
           
           </div>
+          </Jump>
           <Link to='/'>
             
             <img className='bBackIndex' src={bRegresar}></img>

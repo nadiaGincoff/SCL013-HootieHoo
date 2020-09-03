@@ -20,7 +20,6 @@
     }
 
     .imgOneTwo {
-
         width: 100% !important
     }
 }
@@ -30,7 +29,6 @@
         background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
         height: 100vh;
         overflow: hidden;
-
     }
 
     .fatherD {
@@ -51,4 +49,23 @@
         margin-left: -31%;
     }
 
+}
+
+@media only screen and (min-device-width : 1024px) {
+    .divContainer {
+        background: linear-gradient(359.85deg, #C0E7F7 -2.86%, rgba(255, 255, 255, 0.97) 78.47%);
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .fatherD {
+        display: flex;
+        flex-direction: wrap;
+        justify-content: space-around;
+        margin: 10em 15em 0em 30em;
+    }
+    .imgOneTwo {
+        width: 50vh;
+        margin-left: -31%;
+    }
 }

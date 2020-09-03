@@ -63,3 +63,38 @@ and (max-device-width : 1024px)
         width: 110%;
     }
 }
+
+@media only screen and (min-device-width : 1024px) {
+    .containerHeader {
+        width: 100%;
+       /* height: 165px;*/
+        background: linear-gradient(359.85deg, rgba(196, 196, 196, 0) -2.86%, #FFDE73 1.45%, rgba(255, 255, 255, 0.97) 78.47%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+        border-radius: 0px 0px 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+
+    .imageContainer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .imageContainer img{
+        height: 150px;
+        width: 150px;
+     
+    }
+
+    .headerLogo {
+        padding-top: 1em;
+        padding-left: 13.5em;
+        width: 100%;
+    }
+}
+ 
+
