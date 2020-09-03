@@ -1,0 +1,132 @@
+[
+      {
+        "id": "1",
+        "description": "¿Qué elemento debes usar para lavar tus manos?",
+        "answers":[
+          {
+            "description": "Jabón",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/jkitjEe.png"
+          }, 
+          {
+            "description": "Ketchup",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/kz8SIFf.png"
+          }, 
+          {
+            "description": "Cooffe",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/pcracb7.png"
+          },
+          {
+            "description": "Cloro",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/aKD7OzX.png"
+          }  
+        ]
+      },
+      {
+        "id": "2",
+        "description": "¿Cuál es el uso correcto de la mascarilla?",
+        "answers":[
+          {
+            "description": "En la oreja",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/jfcvYgx.png"
+          }, 
+           {
+            "description": "En las manos",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/xMAUwAd.png"
+          },
+          {
+            "description": "Tapando la boca y nariz",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/nxVt74z.png"
+          },
+          {
+            "description": "En los pies",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/xMAUwAd.png"
+          }        
+        ]
+      },
+      {
+        "id": "3",
+        "description": "¿Cuál es la forma correcta de taparse al estornudar o toser?",
+        "answers":[
+          {
+            "description": "b ",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/gOMkfQw.png"
+          }, 
+          {
+            "description": "a",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/r7Ia7w4.png"
+          },
+           {
+            "description": "c",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/yEpaXEm.png"
+          },
+          {
+            "description": "d",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/UFGxXn5.png"
+          }        
+        ]
+      },
+      {
+        "id": "4",
+        "description": "¿Cuáles son los sintomas del COVID-19?",
+        "answers":[
+          {
+            "description": "false1",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/3TudKa0.png"
+          }, 
+          {
+            "description": "Todas las anteriores",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/1CoVgEe.png"
+          },
+           {
+            "description": "false2",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/KuOUOQ7.png"
+          },
+          {
+            "description": "false3",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/WRTigvq.png"
+          }        
+        ]
+      },
+      {
+        "id": "5",
+        "description": "¿Quiénes tienen mayor riesgo de contagio del COVID-19?",
+        "answers":[
+          {
+            "description": "Bebes",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/5CsBPys.png"
+          },
+          {
+            "description": "Niños",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/PEe2K5E.png"
+          }, 
+           {
+            "description": "Adultos",
+            "isCorrect": false,
+            "img" : "https://i.imgur.com/reARt61.png"
+          },
+          {
+            "description": "Abuelos",
+            "isCorrect": true,
+            "img" : "https://i.imgur.com/ZeErR5M.png"
+          }        
+        ]
+      }
+    ]

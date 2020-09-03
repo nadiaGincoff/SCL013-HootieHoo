@@ -8,7 +8,7 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  z-index: 950;
+  z-index: 10000;
 
   .logo {
     padding: 15px 0;
@@ -16,6 +16,7 @@ const Nav = styled.nav`
 `;
 
 const Navbar = () => {
+
   return (
     <Nav>
       <div className="logo"></div>

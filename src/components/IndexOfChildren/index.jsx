@@ -1,16 +1,17 @@
 import React, { Fragment } from "react";
 import HeaderKids from "../Header/ChildrensHeader/Header";
-import "./index.css";
 import { Link } from "react-router-dom";
-import Reveal from "react-reveal/Fade";
+import Jump from "react-reveal/Jump";
 import Girl from "../../img/header/header-girl.png";
 import Boy from "../../img/header/header-boy.png";
-import Jabier from "../../img/card-button/jabier-jabon.png";
-import Mask from "../../img/card-button/mask.png";
-import Pencil from "../../img/card-button/pencil.png";
-import Play from "../../img/card-button/play.png";
+import Jabier from "../../img/card-button/menu/jabier-jabon.png";
+import Mask from "../../img/card-button/menu/mask.png";
+import Pencil from "../../img/card-button/menu/pencil.png";
+import Play from "../../img/card-button/menu/play.png";
 import Paragraph from "../Children/Paragraph";
+import bRegresar from '../../assets/img/botonregresar.png'
 import "./index.css";
+import styled from "styled-components";
 
 const CardButton = (props) => {
   return (
@@ -21,21 +22,34 @@ const CardButton = (props) => {
 };
 
 const IndexOfChildren = () => {
+
   return (
-    <Fragment className="divContainer">
-      <div>
-        
+    <Fragment>
+      <div className='divContainer'>
           <HeaderKids leftImage={Girl} rightImage={Boy} />
           <Paragraph paragraph={`Aprendamos jugando`} />
-          <div className="containerCardButtons">
-            <Link to="/trivia">
-              <CardButton img={Jabier} />
+          <Jump>
+          <div className='containerCardButtons'>
+            <Link to='/trivia'>
+                <CardButton img={Jabier} />
             </Link>
-            <CardButton img={Mask} />
-            <CardButton img={Pencil} />
-            <CardButton img={Play} />
+            <Link to='/adulto'>
+                <CardButton img={Mask} />
+            </Link>
+            <Link to='/menucolorear'>
+                <CardButton img={Pencil} />
+            </Link>
+            <Link to='/videos'>
+                <CardButton img={Play} />
+            </Link>
+          
           </div>
-       
+          </Jump>
+          <Link to='/'>
+            
+            <img className='bBackIndex' src={bRegresar}></img>
+         
+          </Link>
       </div>
     </Fragment>
   );
